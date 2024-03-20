@@ -16,7 +16,7 @@ This is heavily based on 3 opensource projects :
 
 ## Manual Build instruction 
 ```
-git clone <input my own website here>
+git clone https://github.com/skybungee/centos-errata.git
 cd centos-errata
 ```
 ### If you're not using a proxy : 
