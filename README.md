@@ -35,4 +35,5 @@ you can use a web brower to see 4 repository :
 Which provides errata for the 5 major releases of CentOS
 
 ## How to sync with Katello
-Select the product then create a repo and point the web server location
+Select the product then create a repo and put the upstream to the web server directory for the centos version.
+
