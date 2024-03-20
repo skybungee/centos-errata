@@ -43,6 +43,7 @@ RUN createrepo_c -v /var/www/html/errata5 \
 
 RUN wget http://cefs.steve-meier.de/errata.latest.xml.bz2 \
  && bzip2 -dc errata.latest.xml.bz2 > errata.latest.xml \
+ && chmod 755 generate_updateinfo.py \
  && ./generate_updateinfo.py -s all -t all -v -d ./ errata.latest.xml \
  && rm -rf errata.latest.xml* \
  && mv /tmp/updateinfo-5/updateinfo.xml /var/www/html/errata5/repodata/ \
